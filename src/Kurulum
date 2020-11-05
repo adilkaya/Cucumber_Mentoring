@@ -1,0 +1,41 @@
+
+// TODO Maven Projesi oluşturma ve Cucumber Hazırlık
+1- Yeni Proje tıklatıldı -> Proje Tipinde Maven seçildi ve isim
+   verilerek sonuçlandırıldı.
+
+2- Klasör yapısı incelendi :
+   src un altında 2 adet klasör oluşturulduğu görüldü.
+
+   main -> Developer ın çalıştığı , programın web sitesinin yazıldığı yer.
+   test -> Tester ın çalıştığı yer.bütün test e ait dosyalarımız burada
+           olacak.
+
+3- Bu iki klasöre tıklatıldı, her ikisinde de java klasörü olduğu gözüktü
+   Developer üstteki klasörleri,
+   Tester ise test in altındaki java(yeşil) klasörünü
+   sanki kendi src klasörüymüş gibi kullanacak.
+
+   Intelij in    Mavi Klasore verdigi isim  -> Developer Sources Root
+                 Yesil Klasore verdigi isim -> Test Sources Root
+
+4- Tester Cucumber projesi için düzenli bir yapı ile çalışmak için,
+   kendisine ait java klasörüne aşağıdaki 4 klösörü açar.
+
+   Klasörler
+   FeatureFiles   -> senaryolarımızın olduğu klasör
+   StepDefinitions-> Senaryolara ait çalışan metodların olduğu klasör
+   Pages          -> Page Object Model e uyugn sayfaların WebElemnt
+                     ve bunlara ait metodların olduğu klasör.
+                     (@FindBy)
+   Utilities      -> driver la ilgili ve çok sık kullanılacak ortak
+                     metodların olduğu class ların olduğu klasör.
+
+5- File -> Settings -> Plugin yükleme kısmına gidiniz.
+
+6- Daha önce yüklediğiniz TextNG xml file plug ini gibi
+   aşağıdaki plugin leride install ediniz.
+
+   Cucumber for java  -> cucumber a ait dosylar ve çalışma mantığını
+                         editör kazansın diye.
+   Gherkin            -> yazacağım senaryoların konuşma diline yakın
+                         şekilde yazabilmemiz için ekleniyor.
